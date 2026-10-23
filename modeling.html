@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Моделізм та масштабні набори — Jimmy-Toys</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Безкоштовна доставка від 2 000 ₴</span><span>Щодня 09:00–21:00 • 0 800 33 88 11</span></div></div>
+<header class="header">
+  <input type="checkbox" id="menu">
+  <div class="container header-main">
+    <a href="index.html" class="logo"><span class="logo-mark">J</span>Jimmy-Toys</a>
+    <form class="search" role="search" action="modeling.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Знайти LEGO, модель, настільну гру..." aria-label="Пошук">
+    </form>
+    <a href="ai.html" class="ai-pill">✨ <span>AI Assistant</span></a>
+    <div class="header-actions">
+      <a href="#" class="icon-btn" aria-label="Обране"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></a>
+      <a href="#" class="icon-btn" aria-label="Кошик"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></a>
+      <label for="menu" class="icon-btn burger" aria-label="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></label>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html#gift">0–3 роки</a></li>
+        <li><a href="index.html#gift">3–11 років</a></li>
+        <li><a href="index.html#dirs">Конструктори</a></li>
+        <li><a href="modeling.html" class="active">Моделізм</a></li>
+        <li><a href="index.html#dirs">Настільні ігри</a></li>
+        <li><a href="collectors.html">Колекційне</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container catalog">
+  <nav class="breadcrumbs"><a href="index.html">Головна</a> / Каталог / Моделізм</nav>
+  <h1 class="h1" style="font-size:clamp(28px,4vw,42px);margin-top:6px">МОДЕЛІЗМ ТА МАСШТАБНІ НАБОРИ</h1>
+  <p class="lead" style="margin-top:6px">Збірні моделі авіації, бронетехніки, флоту й аксесуари для збирання</p>
+
+  <!-- Категорії: radio + CSS :has() перемикають картки без JavaScript -->
+  <input type="radio" name="cat" id="c-all" class="sr" checked>
+  <input type="radio" name="cat" id="c-avia" class="sr">
+  <input type="radio" name="cat" id="c-armor" class="sr">
+  <input type="radio" name="cat" id="c-fleet" class="sr">
+  <input type="radio" name="cat" id="c-tools" class="sr">
+  <div class="cat-chips">
+    <label class="chip" for="c-all">Усі</label>
+    <label class="chip" for="c-avia">✈️ Авіація (1:72, 1:48)</label>
+    <label class="chip" for="c-armor">🪖 Бронетехніка (1:35)</label>
+    <label class="chip" for="c-fleet">⚓ Військовий флот (1:350)</label>
+    <label class="chip" for="c-tools">🖌️ Фарби, клеї та інструменти</label>
+  </div>
+
+  <form class="filters" action="#">
+    <span class="lbl">☰ Фільтри</span>
+    <select name="scale" aria-label="Масштаб"><option value="">Масштаб</option><option>1:35</option><option>1:48</option><option>1:72</option><option>1:350</option></select>
+    <select name="brand" aria-label="Бренд"><option value="">Бренд</option><option>ICM</option><option>Tamiya</option><option>Trumpeter</option><option>Revell</option></select>
+    <select name="level" aria-label="Складність"><option value="">Складність</option><option>★ Легко</option><option>★★★ Середньо</option><option>★★★★★ Складно</option></select>
+    <select name="price" aria-label="Ціна"><option value="">Ціна: 320 – 8 000 ₴</option><option>До 1 000 ₴</option><option>1 000 – 2 000 ₴</option><option>Від 2 000 ₴</option></select>
+  </form>
+
+  <div class="list-bar">
+    <b class="found"><span class="n-all">ЗНАЙДЕНО: 403 товарів</span><span class="n-avia">ЗНАЙДЕНО: 128 товарів</span><span class="n-armor">ЗНАЙДЕНО: 96 товарів</span><span class="n-fleet">ЗНАЙДЕНО: 74 товарів</span><span class="n-tools">ЗНАЙДЕНО: 105 товарів</span></b>
+    <label>Сортувати:
+      <select><option>За популярністю</option><option>Спочатку дешевші</option><option>Спочатку дорожчі</option></select>
+    </label>
+  </div>
+
+  <div class="products">
+        <article class="p-card avia">
+          <label class="fav" aria-label="В обране"><input type="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></label>
+          <div class="ph " data-emoji="✈️"><span class="ph-img" style="background-image:url('images/Studio product photograph-2.jpg')"></span></div>
+          <h3>Збірний винищувач</h3>
+          <p class="meta">Масштаб: 1:72 • Бренд: ICM<br>Складність: <span class="stars">★★★☆☆</span></p>
+          <div class="p-foot"><span class="price">1 250 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+        <article class="p-card armor">
+          
+          <div class="ph " data-emoji="🪖"><span class="ph-img" style="background-image:url('images/Product media.jpg')"></span></div>
+          <h3>Основний танк</h3>
+          <p class="meta">Масштаб: 1:35 • Бренд: Tamiya<br>Складність: <span class="stars">★★★★☆</span></p>
+          <div class="p-foot"><span class="price">1 890 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+        <article class="p-card fleet">
+          <label class="fav" aria-label="В обране"><input type="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></label>
+          <div class="ph " data-emoji="🚢"><span class="ph-img" style="background-image:url('images/Studio product photograph.jpg')"></span></div>
+          <h3>Модель корабля</h3>
+          <p class="meta">Масштаб: 1:350 • Бренд: Trumpeter<br>Складність: <span class="stars">★★★★★</span></p>
+          <div class="p-foot"><span class="price">3 400 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+        <article class="p-card tools">
+          <label class="fav" aria-label="В обране"><input type="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></label>
+          <div class="ph " data-emoji="🎨"><span class="ph-img" style="background-image:url('images/Studio product photograph-1.jpg')"></span></div>
+          <h3>Набір акрилу (8 шт)</h3>
+          <p class="meta">Об’єм: 17 мл • Бренд: Tamiya<br>Складність: <span class="stars">★☆☆☆☆</span></p>
+          <div class="p-foot"><span class="price">540 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+        <article class="p-card avia">
+          
+          <div class="ph " data-emoji="🚁"><span class="ph-img" style="background-image:url('images/Product media-2.jpg')"></span></div>
+          <h3>Ударний вертоліт</h3>
+          <p class="meta">Масштаб: 1:48 • Бренд: ICM<br>Складність: <span class="stars">★★★☆☆</span></p>
+          <div class="p-foot"><span class="price">1 480 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+        <article class="p-card tools">
+          
+          <div class="ph " data-emoji="✂️"><span class="ph-img" style="background-image:url('images/Product media-1.jpg')"></span></div>
+          <h3>Базовий набір</h3>
+          <p class="meta">Клей і ножиці для моделей • Бренд: Revell<br>Складність: <span class="stars">★☆☆☆☆</span></p>
+          <div class="p-foot"><span class="price">690 ₴</span><a href="#" class="btn btn-blue btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg> В кошик</a></div>
+        </article>
+  </div>
+
+  <nav class="pager" aria-label="Сторінки">
+    <a href="#" class="pager-btn">‹</a>
+    <a href="#" class="pager-btn active">1</a>
+    <a href="#" class="pager-btn">2</a>
+    <a href="#" class="pager-btn">3</a>
+    <span class="pager-btn">…</span>
+    <a href="#" class="pager-btn">70</a>
+    <a href="#" class="pager-btn">Далі ›</a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">Jimmy-Toys</a>
+        <p>Іграшки, моделі та настільні ігри для дітей і дорослих.</p>
+        <p class="foot-phone">0 800 33 88 11</p>
+        <small>Щодня з 09:00 до 21:00</small>
+      </div>
+      <div><h4>Каталог</h4><ul><li><a href="index.html#gift">Малюкам</a></li><li><a href="index.html#dirs">Конструктори</a></li><li><a href="modeling.html">Моделізм</a></li><li><a href="index.html#dirs">Настільні ігри</a></li><li><a href="collectors.html">Колекційне</a></li></ul></div>
+      <div><h4>Допомога</h4><ul><li><a href="support.html">Jimmy Help</a></li><li><a href="support.html#faq">Доставка й оплата</a></li><li><a href="support.html#faq">Обмін і повернення</a></li><li><a href="support.html#faq">Гарантія</a></li><li><a href="support.html#contacts">Контакти</a></li></ul></div>
+      <div><h4>Jimmy-Toys</h4><ul><li><a href="#">Про нас</a></li><li><a href="ai.html">Jimmy AI</a></li><li><a href="#">Журнал</a></li><li><a href="#">Бонусна програма</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Jimmy-Toys. Усі права захищено.</span><span>Політика конфіденційності • Публічна оферта • Умови доставки</span></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jimmy AI — підбір подарунка за 30 секунд</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Безкоштовна доставка від 2 000 ₴</span><span>Щодня 09:00–21:00 • 0 800 33 88 11</span></div></div>
+<header class="header">
+  <input type="checkbox" id="menu">
+  <div class="container header-main">
+    <a href="index.html" class="logo"><span class="logo-mark">J</span>Jimmy-Toys</a>
+    <form class="search" role="search" action="modeling.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Знайти LEGO, модель, настільну гру..." aria-label="Пошук">
+    </form>
+    <a href="ai.html" class="ai-pill">✨ <span>AI Assistant</span></a>
+    <div class="header-actions">
+      <a href="#" class="icon-btn" aria-label="Обране"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></a>
+      <a href="#" class="icon-btn" aria-label="Кошик"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></a>
+      <label for="menu" class="icon-btn burger" aria-label="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></label>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html#gift">0–3 роки</a></li>
+        <li><a href="index.html#gift">3–11 років</a></li>
+        <li><a href="index.html#dirs">Конструктори</a></li>
+        <li><a href="modeling.html">Моделізм</a></li>
+        <li><a href="index.html#dirs">Настільні ігри</a></li>
+        <li><a href="collectors.html">Колекційне</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container ai-page">
+  <input type="radio" name="scn" id="s0" class="sr" checked>
+  <input type="radio" name="scn" id="s1" class="sr">
+  <input type="radio" name="scn" id="s2" class="sr">
+  <input type="radio" name="scn" id="s3" class="sr">
+  <input type="radio" name="scn" id="s4" class="sr">
+  <input type="radio" name="scn" id="s5" class="sr">
+  <nav class="breadcrumbs"><a href="index.html">Головна</a> / Jimmy AI-помічник</nav>
+  <span class="eyebrow" style="color:var(--blue)">Jimmy AI Assistant</span>
+  <h1 class="h1 ai-title" style="font-size:clamp(26px,3.6vw,40px)">Не знаєте, що обрати? Jimmy підкаже <span>за 30 секунд!</span></h1>
+  <p class="lead" style="font-size:14px">Вкажіть вік, інтереси чи бюджет — AI підбере ідеальний подарунок.</p>
+
+  <div class="ai-layout">
+    <!-- Ліва панель фільтрів -->
+    <aside class="panel">
+      <h3>☰ Швидкі фільтри для AI</h3>
+      <p>Ці параметри допоможуть Jimmy зробити точнішу добірку.</p>
+      <form action="#">
+        <div class="field"><label for="age">Вік</label>
+          <select id="age"><option>0–3 роки</option><option>4–11 років</option><option>12–17 років</option><option>18+</option></select></div>
+        <div class="field"><label for="interest">Інтереси</label>
+          <select id="interest"><option>Моделізм</option><option>Конструктори</option><option>Настільні ігри</option><option>3D пазли</option><option>Колекційне</option></select></div>
+        <div class="field"><label for="budget">Бюджет</label>
+          <select id="budget"><option>До 1 000 ₴</option><option>До 1 500 ₴</option><option>До 2 000 ₴</option><option>До 5 000 ₴</option></select></div>
+      </form>
+      <div class="field"><span style="font-size:12px;font-weight:700;color:var(--muted)">Швидкі кнопки</span>
+        <div class="chip-col">
+          <label class="chip" for="s1">🎁 Подарунок на 4 роки</label>
+          <label class="chip" for="s2">⚓ Моделізм 1:350</label>
+          <label class="chip" for="s3">🎲 Настільна для компанії</label>
+          <label class="chip" for="s4">🧱 Конструктор до 1500 грн</label>
+          <label class="chip" for="s5">🧩 3D пазл у 10 років</label>
+        </div>
+      </div>
+      <div class="tip">✦ <b>Можна просто розповісти</b><br>Що подобається людині? Наприклад: «Синові 9, любить космос і LEGO».</div>
+    </aside>
+
+    <!-- Чат -->
+    <section class="panel chat" aria-label="Чат з Jimmy AI">
+      <div class="chat-head">
+        <div class="who"><i>✦</i><div><b>Jimmy AI</b><div class="online">● Готовий допомогти з вибором</div></div></div>
+        <label for="s0" class="link-blue" style="font-size:12px;cursor:pointer">↻ Новий діалог</label>
+      </div>
+      <div class="chat-start">
+        <small>Почніть із підказки</small>
+        <div class="mini-chips"><label class="chip" for="s1">🎁 Подарунок на 4 роки</label><label class="chip" for="s2">⚓ Моделізм 1:350</label><label class="chip" for="s3">🎲 Настільна для компанії</label><label class="chip" for="s4">🧱 Конструктор до 1500 грн</label><label class="chip" for="s5">🧩 3D пазл у 10 років</label></div>
+      </div>
+      <div class="chat-body">
+        <div class="msg"><div class="av">✦</div><div class="bubble">Привіт! Для кого шукаємо подарунок і що подобається?</div></div>
+        <div class="scn scn-0">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">Шукаю модель корабля або 3D пазл для хлопця 10 років, бюджет до 2000 грн.</div></div>
+        </div>
+        <div class="scn scn-1">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">Подарунок на 4 роки</div></div>
+          <div class="msg"><div class="av">✦</div><div class="bubble">Для 4 років раджу м’які та магнітні іграшки, а ще першу настільну гру. Дивіться добірку нижче 👇</div></div>
+        </div>
+        <div class="scn scn-2">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">Моделізм 1:350</div></div>
+          <div class="msg"><div class="av">✦</div><div class="bubble">Масштаб 1:350 — класика для флоту. Ось модель, фарби й ще один корабель для колекції 👇</div></div>
+        </div>
+        <div class="scn scn-3">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">Настільна для компанії</div></div>
+          <div class="msg"><div class="av">✦</div><div class="bubble">Для компанії — гра на 2–6 гравців, а ще дві ідеї для спільного вечора 👇</div></div>
+        </div>
+        <div class="scn scn-4">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">Конструктор до 1500 грн</div></div>
+          <div class="msg"><div class="av">✦</div><div class="bubble">У бюджеті до 1 500 ₴ є чудові набори для збирання 👇</div></div>
+        </div>
+        <div class="scn scn-5">
+          <div class="msg me"><div class="av">Ви</div><div class="bubble">3D пазл у 10 років</div></div>
+          <div class="msg"><div class="av">✦</div><div class="bubble">Для 10 років — дерев’яні 3D пазли й моделі середньої складності, збирати 2–4 вечори 👇</div></div>
+        </div>
+      </div>
+      <form class="chat-input" action="#">
+        <input placeholder="Введіть запит (напр.: Подарунок дівчинці 6 років)" aria-label="Ваш запит" autocomplete="off">
+        <button class="btn btn-blue btn-sm">Надіслати ➤</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Рекомендовані товари -->
+  <section class="rec">
+    <div class="sec-head">
+      <h2 class="h2" style="font-size:24px">Рекомендовані товари</h2>
+      <div class="rec-actions">
+        <a href="#" class="btn btn-white btn-sm">🎙 Голос</a>
+        <a href="#" class="btn btn-white btn-sm">📷 За фото</a>
+        <a href="#" class="btn btn-blue btn-sm">✨ Покращити добірку</a>
+      </div>
+    </div>
+    <div class="products">
+        <div class="scn scn-0">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: модель корабля або 3D пазл для хлопця 10 років, до 2000 грн</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🚢"><span class="ph-img" style="background-image:url('images/Image.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Корабель «Аполлон»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 290 ₴</span></div>
+            <p class="meta">Детальна модель для збирання, 12+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Моделі</span><span>12+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🛳️"><span class="ph-img" style="background-image:url('images/Rectangle.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">3D пазл «Океанський лайнер»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 190 ₴</span></div>
+            <p class="meta">Дерев’яний 3D пазл для дитини, 10+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>3D пазл</span><span>10+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="⚓"><span class="ph-img" style="background-image:url('images/Rectangle-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Авіаносець «Горизонт»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 980 ₴</span></div>
+            <p class="meta">Масштабна модель для дорослих, 14+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Моделі</span><span>14+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+        <div class="scn scn-1">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: подарунок дитині 4 роки</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🧲"><span class="ph-img" style="background-image:url('images/Image-2.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Магнітний конструктор, 64 деталі</h3><span class="price" style="font-size:18px;white-space:nowrap">1 290 ₴</span></div>
+            <p class="meta">Яскраві магнітні пластини, 3+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Конструктор</span><span>3+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🧸"><span class="ph-img" style="background-image:url('images/Image-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Набір «Слоненя та кубики»</h3><span class="price" style="font-size:18px;white-space:nowrap">890 ₴</span></div>
+            <p class="meta">М’яка іграшка й дерев’яні кубики, 1+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Малюкам</span><span>1+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🎲"><span class="ph-img" style="background-image:url('images/Image-3.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Настільна гра «Острів скарбів»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 350 ₴</span></div>
+            <p class="meta">2–6 гравців, 6+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Настільні ігри</span><span>6+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+        <div class="scn scn-2">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: моделізм, масштаб 1:350</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🚢"><span class="ph-img" style="background-image:url('images/Studio product photograph.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Модель корабля</h3><span class="price" style="font-size:18px;white-space:nowrap">3 400 ₴</span></div>
+            <p class="meta">Масштаб 1:350, бренд Trumpeter</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Флот</span><span>1:350</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="⚓"><span class="ph-img" style="background-image:url('images/Rectangle-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Авіаносець «Горизонт»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 980 ₴</span></div>
+            <p class="meta">Масштабна модель для дорослих, 14+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Моделі</span><span>14+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🎨"><span class="ph-img" style="background-image:url('images/Studio product photograph-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Набір акрилу (8 шт)</h3><span class="price" style="font-size:18px;white-space:nowrap">540 ₴</span></div>
+            <p class="meta">Фарби для моделей, 17 мл</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Аксесуари</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+        <div class="scn scn-3">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: настільна гра для компанії</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🎲"><span class="ph-img" style="background-image:url('images/Image-3.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Настільна гра «Острів скарбів»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 350 ₴</span></div>
+            <p class="meta">2–6 гравців, 6+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Настільні ігри</span><span>6+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🏰"><span class="ph-img" style="background-image:url('images/Media-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Дерев’яний 3D пазл «Місто»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 600 ₴</span></div>
+            <p class="meta">280 деталей, 12+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>3D пазл</span><span>12+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🧲"><span class="ph-img" style="background-image:url('images/Image-2.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Магнітний конструктор, 64 деталі</h3><span class="price" style="font-size:18px;white-space:nowrap">1 290 ₴</span></div>
+            <p class="meta">Яскраві магнітні пластини, 3+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Конструктор</span><span>3+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+        <div class="scn scn-4">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: конструктор до 1 500 ₴</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🧲"><span class="ph-img" style="background-image:url('images/Image-2.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Магнітний конструктор, 64 деталі</h3><span class="price" style="font-size:18px;white-space:nowrap">1 290 ₴</span></div>
+            <p class="meta">Яскраві магнітні пластини, 3+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Конструктор</span><span>3+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🛳️"><span class="ph-img" style="background-image:url('images/Rectangle.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">3D пазл «Океанський лайнер»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 190 ₴</span></div>
+            <p class="meta">Дерев’яний 3D пазл для дитини, 10+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>3D пазл</span><span>10+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="✈️"><span class="ph-img" style="background-image:url('images/Image-4.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Збірна модель літака + інструменти</h3><span class="price" style="font-size:18px;white-space:nowrap">1 250 ₴</span></div>
+            <p class="meta">Масштаб 1:72, зручний старт, 10+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Моделі</span><span>10+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+        <div class="scn scn-5">
+          <p class="lead rec-note" style="font-size:13px;grid-column:1/-1;margin-top:-16px">Добірка за запитом: 3D пазл для дитини 10 років</p>
+          <article class="p-card">
+            <div class="ph " data-emoji="🛳️"><span class="ph-img" style="background-image:url('images/Rectangle.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">3D пазл «Океанський лайнер»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 190 ₴</span></div>
+            <p class="meta">Дерев’яний 3D пазл для дитини, 10+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>3D пазл</span><span>10+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🏰"><span class="ph-img" style="background-image:url('images/Media-1.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Дерев’яний 3D пазл «Місто»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 600 ₴</span></div>
+            <p class="meta">280 деталей, 12+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>3D пазл</span><span>12+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+          <article class="p-card">
+            <div class="ph " data-emoji="🚢"><span class="ph-img" style="background-image:url('images/Image.jpg')"></span></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-top:14px"><h3 style="margin:0">Корабель «Аполлон»</h3><span class="price" style="font-size:18px;white-space:nowrap">1 290 ₴</span></div>
+            <p class="meta">Детальна модель для збирання, 12+</p>
+            <div class="mini-chips" style="margin:10px 0"><span>Моделі</span><span>12+</span></div>
+            <a href="#" class="btn btn-blue btn-sm btn-block">Додати в кошик</a>
+          </article>
+        </div>
+    </div>
+    <div class="sec-head" style="margin-top:18px;font-size:12px;color:var(--muted)"><span>AI-підбір має рекомендаційний характер.</span><a href="modeling.html" class="link-blue" style="font-size:12px">Або оберіть самостійно в каталозі</a></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">Jimmy-Toys</a>
+        <p>Іграшки, моделі та настільні ігри для дітей і дорослих.</p>
+        <p class="foot-phone">0 800 33 88 11</p>
+        <small>Щодня з 09:00 до 21:00</small>
+      </div>
+      <div><h4>Каталог</h4><ul><li><a href="index.html#gift">Малюкам</a></li><li><a href="index.html#dirs">Конструктори</a></li><li><a href="modeling.html">Моделізм</a></li><li><a href="index.html#dirs">Настільні ігри</a></li><li><a href="collectors.html">Колекційне</a></li></ul></div>
+      <div><h4>Допомога</h4><ul><li><a href="support.html">Jimmy Help</a></li><li><a href="support.html#faq">Доставка й оплата</a></li><li><a href="support.html#faq">Обмін і повернення</a></li><li><a href="support.html#faq">Гарантія</a></li><li><a href="support.html#contacts">Контакти</a></li></ul></div>
+      <div><h4>Jimmy-Toys</h4><ul><li><a href="#">Про нас</a></li><li><a href="ai.html">Jimmy AI</a></li><li><a href="#">Журнал</a></li><li><a href="#">Бонусна програма</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Jimmy-Toys. Усі права захищено.</span><span>Політика конфіденційності • Публічна оферта • Умови доставки</span></div>
+  </div>
+</footer>
+</body>
+</html>
