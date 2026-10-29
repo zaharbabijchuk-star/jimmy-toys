@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
 </head>
 <body>
 <div class="topbar"><div class="container"><span>Безкоштовна доставка від 2 000 ₴</span><span>Щодня 09:00–21:00 • 0 800 33 88 11</span></div></div>
@@ -48,9 +49,16 @@
       <h1><span class="age">18+</span> Для колекціонерів</h1>
       <span class="tag" style="font-size:16px;padding:6px 9px">🗿</span>
     </div>
-    <div class="ph " data-emoji="👨‍🚀"><span class="ph-img" style="background-image:url('images/Astronaut collectible photograph.jpg')"></span></div>
-    <h2>Колекційна фігурка Астронавта / Скафандра</h2>
-    <p>Преміальна деталізація, масштабний підхід</p>
+    <!-- Слайдер: кнопки, точки та автопрокрутку додає js/main.js (модуль Slider) -->
+    <div class="slider" data-slider aria-roledescription="карусель" aria-label="Колекційні новинки">
+      <div class="slider-track">
+        <div class="slide ph" data-emoji="👨‍🚀" role="group" aria-roledescription="слайд" aria-label="1 з 3" data-title="Колекційна фігурка Астронавта / Скафандра" data-text="Преміальна деталізація, масштабний підхід"><span class="ph-img" style="background-image:url('images/Astronaut collectible photograph.jpg')"></span></div>
+        <div class="slide ph" data-emoji="👨‍🚀" role="group" aria-roledescription="слайд" aria-label="2 з 3" data-title="Фігурка «Космонавт-хранитель»" data-text="Метал і смола, ручне фарбування • 2 900 ₴"><span class="ph-img" style="background-image:url('images/Image-5.jpg')"></span></div>
+        <div class="slide ph" data-emoji="⛵" role="group" aria-roledescription="слайд" aria-label="3 з 3" data-title="Модель вітрильника HMS Victory" data-text="Масштаб 1:300, лімітований реліз • 4 200 ₴"><span class="ph-img" style="background-image:url('images/Media-2.jpg')"></span></div>
+      </div>
+    </div>
+    <h2 data-slider-title aria-live="polite">Колекційна фігурка Астронавта / Скафандра</h2>
+    <p data-slider-text>Преміальна деталізація, масштабний підхід</p>
     <div class="coll-btns">
       <a href="modeling.html" class="btn btn-blue">🔍 Відкрити категорію</a>
       <a href="#items" class="btn btn-white">☰ Показати товари</a>
